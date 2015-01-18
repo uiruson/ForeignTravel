@@ -1,0 +1,46 @@
+<head>
+  <title>foreign-travel</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  
+  <div class="container" id="landingPageContainer">
+    <div class="row">
+      <div class="col-md-12" id="landingFormContainer">
+        <h1>FOREIGN TRAVEL</h1>
+        {{> landingForm}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-centered" id="resultTableContainer">
+        <h2>SEARCH RESULT</h2>
+        <p id="destination"></p>
+        <table class="table" id="resultTable">
+          <thead>
+            <tr>
+              <td><strong>SALE PRICE</strong></td>
+              <td><strong>AIRLINE</strong></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="landingForm">
+  <form class="new-flight">
+    <div class="form-group">
+      <label>DESTINATION</label>
+      <input type="text" class="form-control" name="destination" id="destinationInput" placeholder="Enter destination">
+    </div>
+    <div class="form-group">
+      <label>BUDGET</label>
+      <input type="number" class="form-control" name="budget" id="budgetInput" placeholder="Enter budget">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</template>

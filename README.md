@@ -2,7 +2,8 @@ FOREGIN TRAVEL APP
 ====================
 
 ## About 
-A reverse travel search app built with Meteor.
+A reverse travel search app built with Meteor. App is still work in progress.
+<br/>
 Technology Stack:
 
 <ul>
